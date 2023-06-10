@@ -15,3 +15,11 @@ Expected Output: [0,"Beep!", "Boop!",3,4,5]
 Test: "It should replace every instance of the number 3 with "Won't you be my neighbor?""
 Code: numberCount(5)
 Expected Output: [0,"Beep!", "Boop!","Won't you be my neighbor?",4,5]
+
+Test: "The substitution for 1 should only apply if 2 is not in the number"
+Code: numberCount(12)
+Expected output: [0,"Beep!", "Boop!","Won't you be my neighbor?",4,5....10,"boop!", "beep!"]
+
+Test: "The substitution for 3 should apply even in numbers with 1 and 2"
+Code: numberCount(12)
+Expected output: [0,"Beep!", "Boop!","Won't you be my neighbor?",4,5....10,"boop!", "beep!", "wont you be my neighbor"]
