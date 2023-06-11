@@ -25,8 +25,11 @@ function numberCount(number) {
     for (let i = number; i >= 0; i--) {
       let strReverse = String(i);
       let newStrReverse = strReverse;
-     array.push(newStrReverse);
+     arrayReverse.push(newStrReverse);
+     if (newStr.includes("1") && !newStr.includes("2") && !newStr.includes("3")) {
+        newStr = "beep!";
+        else return arrayReverse;
     }
-    return array;
+    return arrayReverse;
   }
 
