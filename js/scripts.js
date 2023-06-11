@@ -5,7 +5,7 @@ let number = form.number.value;
 function numberCount(number) {
     let array = [];
     for (let i = 0; i <= number; i++) {
-        let str = String(i);
+        let str = i.toString();
         let newStr = str;
         if (newStr.includes("2") && !newStr.includes("3")) {
             newStr = "boop!";
@@ -23,7 +23,7 @@ function numberCount(number) {
 function reverseNumber(number) {
     let arrayReverse = [];
     for (let i = number; i >= 0; i--) {
-      let strReverse = String(i);
+      let strReverse = i.toString();
       let newStrReverse = strReverse;
       if (newStrReverse.includes("2") && !newStrReverse.includes("3")) {
         newStrReverse = "boop!";
