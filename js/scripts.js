@@ -26,7 +26,7 @@ function reverseNumber(number) {
       let strReverse = String(i);
       let newStrReverse = strReverse;
       if (newStrReverse.includes("2") && !newStrReverse.includes("3")) {
-        newStr = "boop!";
+        newStrReverse = "boop!";
       } else if (newStrReverse.includes("1") && !newStrReverse.includes("2") && !newStrReverse.includes("3")) {
         newStrReverse = "beep!";
       } else if (newStrReverse.includes("3") || newStrReverse.includes("2")) {
