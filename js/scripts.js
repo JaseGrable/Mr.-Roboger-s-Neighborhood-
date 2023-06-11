@@ -20,15 +20,19 @@ function numberCount(number) {
 }
 
 
-  function reverseNumber(number) {
+function reverseNumber(number) {
     let arrayReverse = [];
     for (let i = number; i >= 0; i--) {
       let strReverse = String(i);
       let newStrReverse = strReverse;
-     arrayReverse.push(newStrReverse);
-     if (newStr.includes("1") && !newStr.includes("2") && !newStr.includes("3")) {
-        newStr = "beep!";
-        else return arrayReverse;
+      if (newStrReverse.includes("2") && !newStrReverse.includes("3")) {
+        newStr = "boop!";
+      } else if (newStrReverse.includes("1") && !newStrReverse.includes("2") && !newStrReverse.includes("3")) {
+        newStrReverse = "beep!";
+      } else if (newStrReverse.includes("3") || newStrReverse.includes("2")) {
+        newStrReverse = "wont you be my neighbor";
+      }
+      arrayReverse.push(newStrReverse);
     }
     return arrayReverse;
   }
