@@ -37,3 +37,7 @@ function reverseNumber(number) {
     return arrayReverse;
   }
 
+  const form = document.querySelector("question-form");
+  const submitButton = document.querySelector("input[type=submit]");
+  
+  submitButton.addEventListener("click", handleFormSubmission);

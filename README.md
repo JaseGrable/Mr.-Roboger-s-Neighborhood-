@@ -32,3 +32,15 @@ Describe reverseNumber()]
 Test: "The array should return from largest number first to smallest"
 Code: reverseNumber(100)
 Expected Output: [100,99,98,97,96...]
+
+Test: "The array should return largest to smallest, and replace numbers with 1 with "beep!"
+Code: reverseNumber(100)
+Expected Output: ["beep!", 99, 98, 97, 96...]
+
+Test: "The array should return largest to smallest and replace numbers with 2 with "boop!"
+Code: reverseNumber(12)
+Expected Output: ["boop", "beep", "beep", 9,...]
+
+Test: "The array should return largest to smallest and replace numbers with 3 with "won't you be my neighbor"
+Code: reverseNumber(13)
+Expected Output: ["Won't you be my neighbor?", "boop!", "beep!", "beep!", 9, ...]
