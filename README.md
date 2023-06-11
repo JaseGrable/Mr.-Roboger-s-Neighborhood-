@@ -20,6 +20,15 @@ Test: "The substitution for 1 should only apply if 2 is not in the number"
 Code: numberCount(12)
 Expected output: [0,"Beep!", "Boop!","Won't you be my neighbor?",4,5....10,"boop!", "beep!"]
 
+Test: "The substitution for 2 will occur in any number without the number 3"
+code:
+
 Test: "The substitution for 3 should apply even in numbers with 1 and 2"
-Code: numberCount(12)
-Expected output: [0,"Beep!", "Boop!","Won't you be my neighbor?",4,5....10,"boop!", "beep!", "wont you be my neighbor"]
+Code: numberCount(23)
+Expected output: [... "boop!", "boop!", "wont you be my neighbor"]
+
+Describe reverseNumber()]
+
+Test: "The array should return from largest number first to smallest"
+Code: reverseNumber(100)
+Expected Output: [100,99,98,97,96...]

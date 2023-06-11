@@ -39,3 +39,14 @@ function numberCount(number) {
     }
     return array;
 }
+
+
+  function reverseNumber(number) {
+    let array = [];
+    for (let i = number; i >= 0; i--) {
+      let str = String(i);
+      let newStr = str;
+     array.push(newStr);
+    }
+    return array;
+  }
