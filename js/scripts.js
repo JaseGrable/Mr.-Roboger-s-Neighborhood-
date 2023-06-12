@@ -34,13 +34,13 @@ function reverseNumber(number) {
     return arrayReverse;
   }
 
-  const form = document.querySelector("#question-form");
+  const form = document.querySelector("questionForm");
   const submitButton = document.querySelector("input[type=submit]");
   
-  submitButton.addEventListener("click", handleFormSubmission);
+  submitButton.addEventListener("submit", handleFormSubmission);
   
-  function handleFormSubmission(event) {
-    event.preventDefault();
+  function handleFormSubmission() {
+    preventDefault();
   
     const number = Number(document.querySelector("#number").value);
     const results = numberCount(number);
@@ -49,4 +49,11 @@ function reverseNumber(number) {
     pElement.innerText = results;
   
     document.getElementById("results").appendChild(pElement);
+  }
+
+  window.onload = function () {
+    const questionForm = document.getElementById('questionForm');
+    const results = document.getElementById('results');
+    const number = document.getElementById('number')
+
   }
