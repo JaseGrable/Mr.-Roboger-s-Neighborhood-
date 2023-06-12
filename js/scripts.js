@@ -1,7 +1,4 @@
 //Business Logic 
-let form = document.getElementById("numberCountForm")
-let number = form.number.value; 
-
 function numberCount(number) {
     let array = [];
     for (let i = 0; i <= number; i++) {
@@ -37,7 +34,19 @@ function reverseNumber(number) {
     return arrayReverse;
   }
 
-  const form = document.querySelector("question-form");
+  const form = document.querySelector("#question-form");
   const submitButton = document.querySelector("input[type=submit]");
   
   submitButton.addEventListener("click", handleFormSubmission);
+  
+  function handleFormSubmission(event) {
+    event.preventDefault();
+  
+    const number = Number(document.querySelector("#number").value);
+    const results = numberCount(number);
+  
+    const pElement = document.createElement("p");
+    pElement.innerText = results;
+  
+    document.getElementById("results").appendChild(pElement);
+  }
