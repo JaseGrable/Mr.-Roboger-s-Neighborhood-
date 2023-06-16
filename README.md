@@ -37,8 +37,9 @@ MIT
 Copyright (c) Jase Grable
 
 
-#Test Driven Development
-describe numberCount():
+### Test Driven Development
+
+- describe numberCount():
 
 Test: "It should return a an array of numbers from 0 to the user's inputted number"
 Code: numberCount(5);
@@ -67,7 +68,7 @@ Test: "The substitution for 3 should apply even in numbers with 1 and 2"
 Code: numberCount(23)
 Expected output: [... "boop!", "boop!", "wont you be my neighbor"]
 
-Describe reverseNumber()]
+- Describe reverseNumber()]
 
 Test: "The array should return from largest number first to smallest"
 Code: reverseNumber(100)
