@@ -1,3 +1,43 @@
+# Program Language Suggestor
+
+#### By Jase Grable
+
+#### Epicodus Project 3 
+
+## Technologies Used
+
+* Git 
+* CSS
+* HTML
+* VScode
+* LearnHowToProgram.com
+* javascript
+
+## Description
+
+* This is a website that I built for my coding bootcamp at Epicodus. The form allows you to input a number to count. On "submit" the page displays an array ending with the number you entered. Any instance of the number 1 is replaced with "beep," any number containing 2 is replaced with "boop," and any number with 3 is replaced with "won't you be my neighbor. The hierarchy of replacements is 3>2>1, example the number 321 would be replaced with "wont you be my neighbor?" 
+
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop
+* Navigate to top level directory
+* open index.html in your browser
+* answer yes or no questions in form to find out what you should learn
+
+
+## Known Bugs
+
+* none known 
+
+## License
+
+MIT
+
+Copyright (c) Jase Grable
+
+
+
 describe numberCount():
 
 Test: "It should return a an array of numbers from 0 to the user's inputted number"
