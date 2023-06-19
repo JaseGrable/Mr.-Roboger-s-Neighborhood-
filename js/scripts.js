@@ -34,26 +34,32 @@ function reverseNumber(number) {
     return arrayReverse;
   }
 
-  const form = document.querySelector("questionForm");
-  const submitButton = document.querySelector("input[type=submit]");
-  
-  submitButton.addEventListener("submit", handleFormSubmission);
-  
-  function handleFormSubmission() {
-    preventDefault();
-  
-    const number = Number(document.querySelector("#number").value);
-    const results = numberCount(number);
-  
-    const pElement = document.createElement("p");
-    pElement.innerText = results;
-  
-    document.getElementById("results").appendChild(pElement);
-  }
 
-  window.onload = function () {
-    const questionForm = document.getElementById('questionForm');
-    const results = document.getElementById('results');
-    const number = document.getElementById('number')
 
-  }
+
+
+  window.addEventListener("load", function(){
+    const form = document.getElementById("questionForm");
+    form.addEventListener("submit", handleForm)
+  })
+  // document.getElementById('questionForm').addEventListener('submit', function(event) {
+  //   event.preventDefault(); // Prevent form submission and page reload
+
+  //   var inputNumber = document.getElementById('numberInput').value;
+  //   var results = numberCount(inputNumber);
+  //   document.getElementById('results').textContent = results.join(', ');
+// });
+// function handleFormSubmission(event) {
+//   event.preventDefault();
+//   const number = Number(document.querySelector("#number").value);
+//   const results = numberCount(number);
+//   const pElement = document.createElement("p");
+//   pElement.innerText = results.join(', ');
+//   document.getElementById("results").appendChild(pElement);
+// }
+
+// window.onload = function () {
+//   const questionForm = document.getElementById('questionForm');
+//   const submitButton = document.getElementById('submitButton');
+//   submitButton.addEventListener("click", handleFormSubmission);
+// };
