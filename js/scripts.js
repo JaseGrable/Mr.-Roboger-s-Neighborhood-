@@ -34,14 +34,23 @@ function reverseNumber(number) {
     return arrayReverse;
   }
 
+//UI Logic 
+function handleForm(event) {
+  event.preventDefault(); 
+  const numToCount = document.getElementById("numberInput").value;
+  const newNumber = numberCount(numToCount);
+  const results = document.getElementById("results");
+  results.innerText = newNumber; 
+  results.removeAttribute("class");
 
+}
 
 
 
   window.addEventListener("load", function(){
     const form = document.getElementById("questionForm");
-    form.addEventListener("submit", handleForm)
-  })
+    form.addEventListener("submit", handleForm);
+  });
   // document.getElementById('questionForm').addEventListener('submit', function(event) {
   //   event.preventDefault(); // Prevent form submission and page reload
 
