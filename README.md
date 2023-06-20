@@ -23,7 +23,7 @@
 * Clone this repository to your desktop
 * Navigate to top level directory
 * open index.html in your browser
-* answer yes or no questions in form to find out what you should learn
+* enter a number and Mr. Roboger will speak to you!
 
 
 ## Known Bugs
