@@ -16,24 +16,6 @@ function numberCount(number) {
     return array;
 }
 
-
-// function reverseNumber(number) {
-//     let arrayReverse = [];
-//     for (let i = number; i >= 0; i--) {
-//       let strReverse = i.toString();
-//       let newStrReverse = strReverse;
-//       if (newStrReverse.includes("2") && !newStrReverse.includes("3")) {
-//         newStrReverse = "boop!";
-//       } else if (newStrReverse.includes("1") && !newStrReverse.includes("2") && !newStrReverse.includes("3")) {
-//         newStrReverse = "beep!";
-//       } else if (newStrReverse.includes("3") || newStrReverse.includes("2")) {
-//         newStrReverse = "wont you be my neighbor";
-//       }
-//       arrayReverse.push(newStrReverse);
-//     }
-//     return arrayReverse;
-//   }
-
 // UI Logic
 function handleForm(event) {
   event.preventDefault();
