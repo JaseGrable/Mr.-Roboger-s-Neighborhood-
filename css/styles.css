@@ -7,22 +7,8 @@ h1{
 }
 
 body {
-  margin: 3%;
-  background-color: maroon;
+  margin: 5%;
+  background-color: rgb(168, 77, 77);
   color: beige;
   font-size: 20px;
-}
-
-.body {
-  box-sizing: border-box;
-  padding: 10px;
-  border-style: solid; 
-  border-color: beige;
-}
-
-#results {
-  box-sizing: border-box;
-  padding: 10px;
-  border-style: solid; 
-  border-color: rgb(255, 255, 255);
 }
